@@ -1,1 +1,2 @@
 # NetworkIDS
+Given a pcap file, this returns each IP address that sends at least three times as many SYN packets as it receives SYN + ACK packets (not including IP addresses that send one or fewer SYN packets). IP addresses who send lots of SYN packets and don't get lots of SYN + ACK responses are likely to be doing a SYN scan, so this python script is supposed to show which IP addresses could have been doing SYN scans.
